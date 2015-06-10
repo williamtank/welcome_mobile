@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<title>box-pack_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com" />
+<meta name="copyright" content="www.doyoe.com" />
+<style>
+h1{font:bold 20px/1.5 georgia,simsun,sans-serif;}
+.box,.box2{display:-webkit-box;display:-moz-box;display:-o-box;display:-ms-box;display:box;margin:0;padding:10px;background:#000;list-style:none;}
+.box{-webkit-box-orient:horizontal;-moz-box-orient:horizontal;-o-box-orient:horizontal;-ms-box-orient:horizontal;box-orient:horizontal;width:260px;height:100px;}
+.box2{-webkit-box-orient:vertical;-moz-box-orient:vertical;-o-box-orient:vertical;-ms-box-orient:vertical;box-orient:vertical;width:100px;height:260px;}
+#box,#box5{-webkit-box-pack:start;-moz-box-pack:start;-o-box-pack:start;-ms-box-pack:start;box-pack:start;}
+#box2,#box6{-webkit-box-pack:center;-moz-box-pack:center;-o-box-pack:center;-ms-box-pack:center;box-pack:center;}
+#box3,#box7{-webkit-box-pack:end;-moz-box-pack:end;-o-box-pack:end;-ms-box-pack:end;box-pack:end;}
+#box4,#box8{-webkit-box-pack:justify;-moz-box-pack:justify;-o-box-pack:justify;-ms-box-pack:justify;box-pack:justify;}
+.box li{width:50px;}
+.box2 li{height:50px;}
+.box li:nth-child(1),.box2 li:nth-child(1){background:#666;}
+.box li:nth-child(2),.box2 li:nth-child(2){background:#999;}
+.box li:nth-child(3),.box2 li:nth-child(3){background:#ccc;}
+</style>
+</head>
+<body>
+<h1>横向排列时子元素从起始位置对齐 box-pack:start;</h1>
+<ul id="box" class="box">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>横向排列时子元素居中对齐 box-pack:center;</h1>
+<ul id="box2" class="box">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>横向排列时子元素从结束位置对齐 box-pack:end;</h1>
+<ul id="box3" class="box">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>横向排列时子元素两端对齐 box-pack:justify;</h1>
+<ul id="box4" class="box">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>纵向排列时子元素从起始位置对齐 box-pack:start;</h1>
+<ul id="box5" class="box2">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>纵向排列时子元素居中对齐 box-pack:center;</h1>
+<ul id="box6" class="box2">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>纵向排列时子元素从结束位置对齐 box-pack:end;</h1>
+<ul id="box7" class="box2">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+<h1>纵向排列时子元素两端对齐 box-pack:justify;</h1>
+<ul id="box8" class="box2">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+</ul>
+</body>
+</html>
+			
