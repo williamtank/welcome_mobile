@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-<meta charset="utf-8" >
+<meta charset="utf-8" />
+<title>响应式设计Demo页面</title>
 
-<meta name="description" content="慕课网，移动web，alloyteam，js，css">
-
-<meta name="viewport" content="width=320,initial-scale=1,user-scalable=no">
-
-<!-- <meta name="viewport" content="width=320" >  -->
-<!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
-<!-- <meta name="viewport" content="width=320, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">  -->
-<title>这不是个Demo页</title>
-
-<link rel="stylesheet" href="css/normal_0.8.css">
+<!-- html5.js for IE less than 9 (2.34KB)-->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- css3-mediaqueries.js for IE less than 9 (15.64KB)-->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/normal1.css">
 </head>
 
 <body>
-<div id="pagewrap">
+<div id="pagewrap" class="clearfix">
 	<header id="header">
 		<hgroup>
 			<h1 id="site-logo">这不是一个Demo页面<i class="betaIcon">beta</i></h1>
 			<h3>现在是手机当电脑用，电脑当电视机用，电视机当摆设</h3>
 		</hgroup>	
-
-		<nav>
-			<ul id="main-nav" class="clearfix">
-				<li><a href="#">首页</a></li>
-				<li><a href="#">导航一</a></li>
-				<li><a href="#">导航二</a></li>
-				<li><a href="#">导航三</a></li>
-				<li><a href="#">联系我们</a></li>
-				<div class="search">
-					<input type="text" placeholder="你妹夫的二奶" />
-					<button type="button"><i class="icon icon-search"></i></button>
-				</div>
-			</ul>
-			
-		</nav>
-
+		
 	</header>
-
-
-
+	<nav id="main-nav">
+		<ul  class="clearfix">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">导航一</a></li>
+			<li><a href="#">导航二</a></li>
+			<li><a href="#">导航三</a></li>
+			<li><a href="#">联系我们</a></li>
+			<div class="search">
+				<input type="text" placeholder="你妹夫的二奶" />
+				<button type="button"><i class="icon icon-search"></i></button>
+			</div>
+		</ul>
+		
+	</nav>
 	<div id="content">
 
 		<section id="slider"><img src="images/slider_p.png"></section>

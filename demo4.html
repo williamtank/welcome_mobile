@@ -1,173 +1,47 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-<meta charset="utf-8" />
-<title>响应式设计Demo页面</title>
+<meta charset="utf-8" >
 
-<!-- html5.js for IE less than 9 (2.34KB)-->
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!-- css3-mediaqueries.js for IE less than 9 (15.64KB)-->
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<link rel="stylesheet" href="css/normal2.css">
-<style>
-	/*额外为1024px范围做了些调节*/
- 	@media screen and (max-width:1024px){
- 		#pagewrap {
-            width: 95.5%;
-        }
-        #content {
-            width: 62%;
-        }
-        #content .article .hr{
-            width: 66%;
-            margin-left: 34%;
-        }
-	}
-	
-    @media screen and (max-width:980px){
-    	
-        /*使用流体图片*/
-        img {
-            max-width: 100%;
-            height: auto;
-            width: auto\9; /* ie8 */
-        }
-        #pagewrap {
-            width: 95%;
-            padding: 0 10px;
-     
-        }
-        #header{
-            margin-bottom: 2%;
-        }
-        #main-nav li a{
-        	padding: 14px 10px;
-        }
-        #main-nav .search{
-        	margin-right: 10px;
-        }
-        #header h1{
-			margin: 0;hj
-    	}
+<meta name="description" content="慕课网，移动web，alloyteam，js，css">
 
-        #sidebar {
-            width: 30%;
-        }
-        #sidebar .widget {
-            margin-bottom: 10px;
-        }
-        #sidebar .comment img{
-            display: none;
-        }
-        #sidebar .comment li{
-            height: 25px;
-            line-height: 25px;
-        }
-        #sidebar .comment .desc{
-            width: 100%;
-        }
+<meta name="viewport" content="width=320,initial-scale=1,user-scalable=no">
 
-        #content {
-            width: 60%;
-        }
-        #content .article .hr{
-            width: 66%;
-            margin-left: 34%;
-        }
-        #content .article .nums .rectangle{
-            width: 50%;
-        }
-        #content .article .img{
-        	height: 200px;
-        }
-        #content .article .img img{
-            top:-25%;
-        }
-        #footer{
-            width:100%;
-        }
+<!-- <meta name="viewport" content="width=320" >  -->
+<!-- <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+<!-- <meta name="viewport" content="width=320, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">  -->
+<title>这不是个Demo页</title>
 
-    }
-
-    /*额外为700px范围对搜索框的位置做了些调节*/
- 	@media screen and (max-width:700px){
- 		#main-nav .search {
-    		top: -106px;
-    	}
-    	
-	}
-
-    @media screen and (max-width: 650px){
-    	body{
-    		font-size: 16px;
-    	}
-    	#header h1{
-    		font-size: 24px;
-			margin: 0;
-			padding: 10px 0;
-    	}
-    	#header h3{
-    		font-size: 18px;
-    		margin: 0;
-    	}
-    	#content{
-    		width: 100%;
-    		margin: 45px 0 0;
-    	}
-    	#sidebar{
-    		width: 100%;
-			margin-top: 0;
-			margin-bottom: 130px;
-    	}
-    	#main-nav li a{
-    		font-size: 95%;
-			padding: 12px;
-    	}
-    	#main-nav .search {
-    		top: -76px;
-    	}
-    	#main-nav .search input{
-    		width: 60px;
-    		text-indent: 5px;
-    	}
-    }
-
-     @media screen and (max-width: 480px){
-     	body{
-     		background: green;
-     	}
-     }
-</style>
-
+<link rel="stylesheet" href="css/normal_0.8.css">
 </head>
 
 <body>
-<div id="pagewrap" class="clearfix">
+<div id="pagewrap">
 	<header id="header">
 		<hgroup>
 			<h1 id="site-logo">这不是一个Demo页面<i class="betaIcon">beta</i></h1>
 			<h3>现在是手机当电脑用，电脑当电视机用，电视机当摆设</h3>
 		</hgroup>	
-		
+
+		<nav>
+			<ul id="main-nav" class="clearfix">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">导航一</a></li>
+				<li><a href="#">导航二</a></li>
+				<li><a href="#">导航三</a></li>
+				<li><a href="#">联系我们</a></li>
+				<div class="search">
+					<input type="text" placeholder="你妹夫的二奶" />
+					<button type="button"><i class="icon icon-search"></i></button>
+				</div>
+			</ul>
+			
+		</nav>
+
 	</header>
-	<nav id="main-nav">
-		<ul  class="clearfix">
-			<li><a href="#">首页</a></li>
-			<li><a href="#">导航一</a></li>
-			<li><a href="#">导航二</a></li>
-			<li><a href="#">导航三</a></li>
-			<li><a href="#">联系我们</a></li>
-			<div class="search">
-				<input type="text" placeholder="你妹夫的二奶" />
-				<button type="button"><i class="icon icon-search"></i></button>
-			</div>
-		</ul>
-		
-	</nav>
+
+
+
 	<div id="content">
 
 		<section id="slider"><img src="images/slider_p.png"></section>
@@ -337,8 +211,7 @@
 </body>
 
 <script>
-	window.onresize = function(){
-		console.log(window.innerWidth);
-	}
+	
 </script>
 </html>
+            

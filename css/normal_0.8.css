@@ -20,6 +20,8 @@ ul,li,p{
 body{
 	font: 16px '微软雅黑';
 	background: #FAF2DA;
+	margin: 0;
+	padding: 0;
 }
 /*img{
     max-width: 100%
@@ -29,18 +31,19 @@ a{
 }
 
 #pagewrap {
-	width: 980px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 	border: 5px solid;
 	border-color: transparent black transparent black;
 	position: relative;
+	box-sizing: border-box;
 }
-#header {
+.header {
 	height: 160px;
 	margin-bottom: 15px;
 }
-.betaIcon{
+.header .betaIcon{
 	background: #63D1E6;
 	display: inline-block;
 	font-size: 11px;
@@ -51,19 +54,18 @@ a{
 	position: absolute;
 	margin-left: 8px;
 }
-#site-logo {
+.header .site-logo {
 	text-shadow: 1px 1px 5px rgba(187, 187, 97, 0.71);
 	position: relative;
 }
 
 #main-nav {
-	/*	-webkit-padding-start: 0px;*/
-	width: 105%;
-	margin-left: -25px;
+ 	width: 980px;
+ 	margin-left: -25px;
 	position: relative;
 	/*background: -webkit-gradient(linear, left top, left bottom, from(#B9B9B9), to(#6A6A6A));*/
 	background: black;
-	line-height: 140%;
+	line-height: 1.4;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .4);
 }
 #main-nav li{
@@ -95,160 +97,160 @@ a{
 	height: 25px;
 }
 
-#sidebar {
+.sidebar {
 	width: 280px;
 	float: right;
 }
-#sidebar .widget{
+.sidebar .widget{
 	background: #FFFCF0;
 	border-radius: 8px;
 	margin-bottom: 20px;
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), 0 1px 1px rgba(0, 0, 0, .4);
 }
-#sidebar .widget .title{
+.sidebar .widget .title{
 	color: #D1D648;
 	font-weight: bold;
 	background: #414039;
 	border-radius: 8px 8px 0 0;
 	padding: 8px 0 8px 15px;
 }
-#sidebar .widget .title:hover{
+.sidebar .widget .title:hover{
 	text-decoration: none;
 }
-#sidebar .widget li:last-child{
+.sidebar .widget li:last-child{
 	border-radius: 0 0 8px 8px;
 	
 }
-#sidebar .folder li{
+.sidebar .folder li{
 	border-bottom: 1px solid #DDD;
 	padding: 8px 0 8px 15px;
 	color: #7C7C7C;
 	cursor: pointer;
 }
-#sidebar .folder li:hover{
+.sidebar .folder li:hover{
 	text-decoration: underline;
 	background: white;
 }
-#sidebar .faces li{
+.sidebar .faces li{
 	float: left;
 	margin: 8px 4px;
 	box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.17);
 	cursor: pointer;
 }
-#sidebar .faces img{
+.sidebar .faces img{
 	width: 60px;
 	height: 60px;
 	border: 1px solid white;
 	display: -webkit-box;
 }
-#sidebar .comment li{
+.sidebar .comment li{
 	padding: 5px;
 	height: 45px;
 	line-height: 45px;
 	font-size: 14px;
 }
-#sidebar .comment img{
+.sidebar .comment img{
 	width: 32px;
 	margin: 2px;
 	float: left;
 }
-#sidebar .comment .name{
+.sidebar .comment .name{
 	color: #1DAFE7;
 	margin: 0 5px;
 }
-#sidebar .comment .desc{
+.sidebar .comment .desc{
 	display: inline-block;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	width: 230px;		
 }
-#sidebar .comment .desc span:nth-child(2):hover{
+.sidebar .comment .desc span:nth-child(2):hover{
 	text-decoration: underline;
 	cursor: pointer;
 }
 
 
-#content {
+.content {
 	width: 600px;
 	float: left;
 }
-#content #slider{
+.content #slider{
 	background: rgba(212, 255, 202, 0.2);
 	border-radius: 20px;
 }
-#content .article{
+.content .article{
 	padding-bottom: 10px;
 	margin: 20px auto 40px;
 }
-#content .article .img{
+.content .article .img{
 	height: 250px;
 	overflow: hidden;
 	position: relative;
 	margin-bottom: 10px;
 }
-#content .article .img img{
+.content .article .img img{
 	width: 600px;
 	position: absolute;
 	top: -25%;		
 }
-#content .article .img .tips{
+.content .article .img .tips{
 	position: absolute;
 	top: 10%;
 	color: #fff;		
 }
-#content .article .img .date{
+.content .article .img .date{
 	float: left;
 	background: black;
-	padding: 4px 10px 5px;
+	padding: 5px 10px;
 }
-#content .article .img .triangle{
+.content .article .img .triangle{
 	float: left;
-	border: 15px solid;
+	border: 13px solid;
 	border-color: transparent transparent transparent black;
 }
 
-#content .article .author{
+.content .article .author{
 	width: 80px;
 	float: left;
 	margin: 0 20px 5px 0;
 }
-#content .article .author img{
+.content .article .author img{
 	width: 80px;
 }
-#content .article .title{
+.content .article .title{
 	font-weight: bolder;
 	font-size: 19px;
 	text-shadow: 0 0 5px rgba(48, 48, 48, 0.6);
 	margin-bottom: 5px;
 	cursor: pointer;
 }
-#content .article .title:hover{
+.content .article .title:hover{
 	text-shadow: 0 0 5px rgba(148, 156, 52, 0.6);
 }
 
-#content .article .desc{
+.content .article .desc{
 	color:#858585;
 	cursor: pointer;
 }
-#content .article .desc:hover{
+.content .article .desc:hover{
 	text-decoration: underline;
 }
-#content .article .nums{
+.content .article .nums{
 	margin-bottom: 5px;
 	height: 21px;
 	line-height: 21px;
 }
-#content .article .nums span{
+.content .article .nums span{
 	margin-right:10px;
 	float: right;
 }
-#content .article .nums .trangleLB{
+.content .article .nums .trangleLB{
 	border: 10px solid;
 	border-color: transparent #EBEB46 #EBEB46 transparent;
 	float: right;
 }
-#content .article .nums .rectangle{
+.content .article .nums .rectangle{
 	background: #EBEB46;
 	float: right;
 	width: 300px;
@@ -256,7 +258,7 @@ a{
 	padding-right: 20px;
 	color:#858585;
 }
-#content .article .hr{
+.content .article .hr{
 	border-bottom: 2px solid dimGray;
 	width: 400px;
 	margin-left: 200px;
