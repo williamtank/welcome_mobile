@@ -31,7 +31,7 @@ a{
 }
 
 #pagewrap {
-	width: 980px;
+	width: 1024px;
 	margin: 0 auto;
 	padding: 0 20px;
 	border: 5px solid;
@@ -60,7 +60,7 @@ a{
 }
 
 #main-nav {
- 	width: 980px;
+ 	width: 1024px;
  	margin-left: -25px;
 	position: relative;
 	/*background: -webkit-gradient(linear, left top, left bottom, from(#B9B9B9), to(#6A6A6A));*/
