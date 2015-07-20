@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Test Tap</title>
+<style>
+	.touchpad{
+		width: 100%;
+		height: 200px;
+		font-size: 40px;
+		text-align: center;
+		line-height: 200px;
+		background: rgba(0,0,0,0.5);
+		position: relative;
+		color: #ddd;
+	}
+
+	.ball{
+		display: none;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		border-radius: 15px;
+		background-color: #7AE6FF;
+		top: 0;
+		left: 0;
+	}
+	p{
+		height: 30px;
+	}
+
+</style>
+</head>
+<body>
+
+<p id="desc"></p>
+<div id="touchPad" class="touchpad">触摸板</div>
+<div id="ball" class="ball"></div>
+
+<script src="../js/zepto.js"></script>
+<script type="text/javascript">
+	var touchpad = document.querySelector('#touchPad'),
+		ball = document.querySelector('#ball'),
+		desc = document.querySelector('#desc');
+
+	//简单的touch事件（废弃）
+	var touchHandler = function(e){
+		var type = e.type;
+
+
+		//注意touchend的touches和targetTouches为空，只偶有changeTouches获取上次一的touchTlist
+		if(type != 'touchend'){
+			var pos = {
+				x : e.touches[0].clientX,
+				y : e.touches[0].clientY
+			}
+
+			ball.style.left = pos.x + 'px';
+			ball.style.top = pos.y + 'px';
+			desc.innerHTML = e.type + '(clienX:'+pos.x+', clientY:'+ pos.y+')';
+		}else{
+			desc.innerHTML = e.type ;
+		}
+		
+		switch(type){
+			case 'touchstart':
+				ball.style.display = 'block'; 
+				break;
+			case 'touchmove': 
+				//android的4.4,4.0的bug：只触发touchstart，和一次的touchmove，touchend不触发
+				//加入evnt.preventDefault
+				event.preventDefault();
+				break;
+			case 'touchend': 
+				ball.style.display = 'none';
+				break;
+		}
+	}
+
+	touchpad.addEventListener('touchstart',touchHandler);
+	touchpad.addEventListener('touchmove', touchHandler);
+	touchpad.addEventListener('touchend', touchHandler);
+
+
+</script>
+
+</body>
+</html>

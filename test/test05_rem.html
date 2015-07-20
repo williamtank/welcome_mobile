@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Test REM</title>
+<style>
+	html{
+		font-size: 40px;
+	}
+	body{
+		font-size: 20px;
+	}
+	.use_em,.use_rem{
+		font-size: 14px;
+	}
+	.use_em span{
+		font-size: 1em;
+	}
+	.use_rem span{
+		font-size: 1rem;
+	}
+
+	.img_em{
+		width: 2em;
+		height: 2em;
+	}
+	.img_rem{
+		width: 2rem;
+		height: 2rem;
+	}
+
+</style>
+</head>
+<body>
+
+<div class="use_em">
+	<span>font-size使用em</span>
+</div>
+
+<div class="use_rem">
+	<span>font-size使用rem</span>
+</div>
+
+<p>图片使用em</p>
+<img src="../images/face01.jpg" class="img_em">
+<p>图片使用rem</p>
+<img src="../images/face02.jpg" class="img_rem">
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Test Tap</title>
+<style>
+	.btn{
+		width: 150px;
+		height: 60px;
+		line-height: 60px;
+
+		background-color: #EA424F;
+		color: #fff;
+		font-size: 20px;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	.bg-green{
+		background-color: #78C576;
+	}
+
+	.show_time_click{
+		display: inline-block;
+		font-size: 25px;
+		margin-left: 10px;
+	}
+	.mod{
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		background: rgba(61, 61, 61, 0.71);
+		color: #fff;
+		top: 10px;
+		left: 0;
+		text-align: center;
+		font-size: 25px;
+		line-height: 200px;
+		font-weight: bold;
+	}
+
+</style>
+</head>
+<body>
+<p>注意：该Demo在移动设备上才能看出差别</p>
+<div class="line">
+	<div class="btn" id="clickBtn">click me</div>
+	<div class="show_time_click" id="clickTime">0</div>
+</div>
+
+<div class="line">
+	<div class="btn bg-green" id="tapBtn">tap me</div>
+	<div class="show_time_click" id="tapTime">0</div>
+</div>
+
+<div class="mod" id="mod">点我消失</div>
+
+<script src="../js/zepto.js"></script>
+<script type="text/javascript">
+	
+	var clickBtn = document.querySelector('#clickBtn'),
+		tapBtn = document.querySelector('#tapBtn'),
+		clickTime = document.querySelector('#clickTime'),
+		tapTime = document.querySelector('#tapTime'),
+		mod =  document.querySelector('#mod');
+
+	var start = 0,end = 0;
+	clickBtn.addEventListener('touchstart',function(){
+		start = new Date();
+	});
+	tapBtn.addEventListener('touchstart',function(){
+		start = new Date();
+	});
+
+	clickBtn.addEventListener('click',function(){
+		end = new Date();
+		clickTime.innerHTML = (end-start)+'ms';
+	});
+	$('#tapBtn').on('tap',function(){
+		end = new Date();
+		tapTime.innerHTML = (end-start)+'ms';
+	})
+	$('#mod').on('tap',function(){
+		$(this).hide();
+	})
+</script>
+
+</body>
+</html>

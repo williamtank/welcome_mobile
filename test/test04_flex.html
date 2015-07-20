@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Test Flex</title>
+<style>
+	body{
+		padding: 0;
+		margin: 0;
+		font-family: '微软雅黑';
+
+	}
+	.nav{
+		overflow: hidden;
+		background-color: #DE7C3C;
+		padding: 10px;
+		display: -webkit-flex;
+	}
+	.item{
+		color: #FDDFA7;
+		padding: 0 5px;
+		text-align: center;
+		/*display: inline-block;*/
+		flex:1;
+	}
+	.img{
+		width: 35px;
+		height: 35px;
+		font-size: 26px;
+		color: rgb(249,249,249);
+		vertical-align: middle;
+	}
+	.item + .item{
+		border-left: 1px dashed #F4F0D4;
+	}
+	.content{
+		margin-top: 40px
+	}
+
+</style>
+</head>
+<body>
+
+<div class="nav">
+	<div class="item">
+		<img class="img" src="../images/tuan.png">
+		<span>团购卷</span>
+	</div>
+<!--  	<div class="item">
+		<img class="img" src="../images/where.png">
+		<span>足迹</span>
+	</div> -->
+	<div class="item" style="flex:2">
+		<span class="img">@</span>
+		<span>放学别走</span>
+	</div> 
+</div>
+
+<div class="content">
+	页面内容....
+</div>
+
+</body>
+</html>
