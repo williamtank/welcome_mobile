@@ -2,44 +2,130 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<title>Test REM</title>
+
+<meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+
+<title>Test 02</title>
+</head>
 <style>
 	html{
-		font-size: 40px;
-	}
-	body{
-		font-size: 20px;
-	}
-	.use_em,.use_rem{
-		font-size: 14px;
-	}
-	.use_em span{
-		font-size: 1em;
-	}
-	.use_rem span{
-		font-size: 1rem;
+		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 
-	.img_em{
-		width: 2em;
-		height: 2em;
+	body{
+		margin: 0;
+		width: 100%;
+		height: 100%;
+
+/*		position: absolute;
+		width: 100%;
+		height: 1136px;
+		top: 0;
+		overflow: hidden;*/
 	}
-	.img_rem{
-		width: 2rem;
-		height: 2rem;
+
+	.page{
+		margin-top: 40px;
+		width: 750px;
+		height: 1136px;
+		position: absolute;
+		top: 0;
+		/*bottom: 44px;*/
+  		overflow-y: scroll;
+  		-webkit-overflow-scrolling:touch;
+	}
+
+	.pic{
+		width: 750px;
+		background-color: #72DFFF;
+		color: white;
+		font-size: 60px;
+		text-align: center;
+		font-family: cursive; 
+	}
+
+	img{
+		margin-right: 100px;
+		margin-bottom: 150px;
+	}
+
+	.borderbox{
+		position: absolute;
+		top: 100px;
+		left: 60px;
+
+		width: 200px;
+		height: 200px;
+		border: 1px solid #fff;
+	}
+
+
+	.top-tabs{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 40px;
+		font-size: 20px;
+		width: 100%;
+		background: red;
+		/* other */
+	}
+	.bottom-tabs{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 40px;
+		width: 100%;
+		font-size: 20px;
+		background: green;
+		/* other */
 	}
 
 </style>
-</head>
+
 <body>
+	<div class="top-tabs">
+		header
+	</div>
+
+	<div class="page">
+		<div class="pic">	
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
 
 
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
 
 
-<img src="../images/face011.jpg" width="100%">
-<p>图片使用rem</p>
-<img src="../images/face02.jpg">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+			<img src="http://mmbiz.qpic.cn/mmbiz/14icnjVaMZaN4ZmZHCJ0BJVrNRWibPpc8quJAqH8aicEXwd6fIVczeTrzttAsvYXsnMY78PaNqLKMqRf1bk21Hygg/0?wxfrom=5">
+		</div>
+		<script src="http://qqweb.qq.com/linjs/kabuka.js"></script>
+	</div>
+
+	<div class="bottom-tabs">
+		bottom
+	</div>
 
 </body>
+
 </html>
